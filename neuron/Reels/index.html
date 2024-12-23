@@ -6,18 +6,68 @@
   <title>Neuron</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
-    .move-down {
-      margin-top: 20vh; /* Move content down by 20% of the viewport height */
+    /* Center header */
+    .header-container {
+      text-align: center;
+      margin-top: 15vh; /* Push header downward */
+    }
+
+    .header-container h1 {
+      font-size: 2.5rem;
+    }
+
+    /* General styles for navigation */
+    #nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      background-color: #f8f8f8;
+    }
+
+    #nav .links,
+    #nav .icons {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    #nav .links li,
+    #nav .icons li {
+      margin: 5px 0;
+    }
+
+    #nav .links a,
+    #nav .icons a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    #nav .icons a {
+      font-size: 1.5rem;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      #nav {
+        flex-direction: column;
+      }
+
+      #nav .links li,
+      #nav .icons li {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body class="is-preload">
 
-  <div class="move-down">
+  <!-- Header -->
+  <div class="header-container">
     <h1>Neuron</h1>
     <a href="https://reeom97.github.io/ReemPort.github.io/">Go back to Homepage</a>
   </div>
-
 
   <!-- Navigation -->
   <nav id="nav">
@@ -35,11 +85,14 @@
     </ul>
   </nav>
 
+</body>
+</html>
+
   <!-- Main Content -->
   <div id="main">
     <article>
       <header>
-        <h2>Reels / shorts</h2>
+        
       </header>
       <div class="video-wrapper">
         <!-- First Video -->
